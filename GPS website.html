@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Jahazpur | Excellence in Education</title>
+    <style>
+        /* General Styles */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+        header { background: #003366; color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; margin-left: 20px; text-decoration: none; font-weight: bold; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); 
+                height: 70vh; background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 0 20px; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; max-width: 600px; }
+
+        /* Sections */
+        .container { padding: 4rem 10%; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 30px; }
+        .card { padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card i { font-size: 2rem; color: #003366; }
+
+        /* Contact Section */
+        .contact { background: #f4f4f4; padding: 4rem 10%; }
+        form { max-width: 600px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
+        input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #003366; color: white; padding: 12px; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; }
+        
+        footer { background: #002244; color: white; text-align: center; padding: 2rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo"><strong>GPS JAHAZPUR</strong></div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#academics">Academics</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to GPS Jahazpur</h1>
+    <p>Empowering students with knowledge, character, and the skills to lead in an ever-changing world.</p>
+</section>
+
+<section id="about" class="container">
+    <h2>Our Vision & Mission</h2>
+    <p>At GPS Jahazpur, we are dedicated to fostering a supportive and challenging environment where every student can thrive academically and socially. We believe in holistic development and lifelong learning.</p>
+</section>
+
+<section id="facilities" class="container" style="background-color: #fff;">
+    <h2>School Facilities</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Modern Classrooms</h3>
+            <p>Spacious, well-ventilated rooms designed for optimal learning and engagement.</p>
+        </div>
+        <div class="card">
+            <h3>Science & Tech Lab</h3>
+            <p>Hands-on experience with the latest equipment to spark curiosity and innovation.</p>
+        </div>
+        <div class="card">
+            <h3>Sports Grounds</h3>
+            <p>Large play areas to encourage physical fitness and teamwork through various sports.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 style="text-align:center;">Get In Touch</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 GPS Jahazpur. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -558,6 +558,11 @@ section {
   background-color: #f8fafc;
 }
 
+/* Force affiliation number or text to stay on a single line */
+.nowrap-text {
+  white-space: nowrap;
+}
+
 /* Fixed column allocations for absolute uniform layout */
 .disclosure-table th:nth-child(1),
 .disclosure-table td:nth-child(1) {
@@ -579,7 +584,8 @@ section {
   color: #0066cc;
   font-weight: 600;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12.5px;
+  word-break: break-all;
 }
 
 .pdf-link:hover {

@@ -70,6 +70,7 @@ nav {
   display: flex; 
   gap: 28px; 
   list-style: none; 
+  align-items: center;
 }
 
 .nav-links a { 
@@ -82,6 +83,42 @@ nav {
 
 .nav-links a:hover { 
   color: var(--gold-light); 
+}
+
+/* Dropdown Menu Styles */
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--navy);
+  min-width: 200px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  border-radius: 6px;
+  padding: 10px 0;
+  z-index: 110;
+  border-top: 2px solid var(--gold);
+}
+
+.nav-links .dropdown-content a {
+  display: block;
+  padding: 10px 18px;
+  color: rgba(255,255,255,0.85);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.nav-links .dropdown-content a:hover {
+  background: rgba(200,149,42,0.15);
+  color: var(--gold-light);
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .nav-cta {
@@ -495,6 +532,67 @@ section {
   line-height: 1.65; 
 }
 
+/* ── MANDATORY DISCLOSURE SECTION STYLES ── */
+.disclosure-section {
+  background: var(--white);
+}
+
+.disclosure-block {
+  margin-bottom: 20px;
+}
+
+.disclosure-table-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  background: var(--cream);
+  padding: 12px 16px;
+  border-left: 4px solid var(--gold);
+  margin-bottom: 16px;
+  border-radius: 0 6px 6px 0;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.disclosure-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13.5px;
+}
+
+.disclosure-table th {
+  background: var(--navy);
+  color: var(--white);
+  padding: 12px 14px;
+  font-weight: 700;
+  border: 1px solid #1a365d;
+}
+
+.disclosure-table td {
+  padding: 12px 14px;
+  border: 1px solid #e2e8f0;
+  color: var(--text);
+  vertical-align: middle;
+}
+
+.disclosure-table tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.pdf-link-placeholder {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 12.5px;
+  background: #edf2f7;
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
 /* ── LEADERSHIP ── */
 .lead-grid { 
   display: grid; 
@@ -531,7 +629,7 @@ section {
   color: var(--gold-light);
   flex-shrink: 0; 
   border: 3px solid var(--gold);
-  object-fit: cover;               /* Ensures photos scale correctly */
+  object-fit: cover;             
   background-size: cover;          
   background-position: center;     
   overflow: hidden;                

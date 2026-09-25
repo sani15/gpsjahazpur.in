@@ -48,16 +48,20 @@ nav {
 .nav-logo .emblem {
   width: 42px; 
   height: 42px; 
-  background: var(--gold); 
+  background: var(--white); 
   border-radius: 50%;
   display: flex; 
   align-items: center; 
   justify-content: center;
-  font-family: 'Playfair Display', serif; 
-  font-size: 15px; 
-  font-weight: 700; 
-  color: var(--navy);
   flex-shrink: 0;
+  overflow: hidden;
+  border: 1.5px solid var(--gold);
+}
+
+.nav-logo .emblem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .nav-logo span { 

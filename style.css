@@ -583,6 +583,24 @@ section {
   background-color: #f8fafc;
 }
 
+/* Column Width Adjustments */
+.disclosure-table th:nth-child(1),
+.disclosure-table td:nth-child(1) {
+  width: 80px;
+  text-align: center;
+}
+
+.disclosure-table th:nth-child(2),
+.disclosure-table td:nth-child(2) {
+  width: auto;
+}
+
+.disclosure-table th:nth-child(3),
+.disclosure-table td:nth-child(3) {
+  width: 240px;
+  text-align: right;
+}
+
 .pdf-link-placeholder {
   color: var(--muted);
   font-style: italic;

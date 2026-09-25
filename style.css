@@ -34,7 +34,7 @@ nav {
   align-items: center; 
   justify-content: space-between;
   padding: 0 40px; 
-  height: 70px;
+  height: 75px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.28);
 }
 
@@ -46,8 +46,8 @@ nav {
 }
 
 .nav-logo .emblem {
-  width: 52px; 
-  height: 52px; 
+  width: 58px; 
+  height: 58px; 
   background: var(--white); 
   border-radius: 50%;
   display: flex; 
@@ -62,12 +62,14 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .nav-logo span { 
   color: var(--white); 
   font-weight: 700; 
-  font-size: 16px; 
+  font-size: 16.5px; 
+  letter-spacing: 0.3px;
 }
 
 .nav-links { 
@@ -165,7 +167,7 @@ nav {
 .mobile-menu {
   display: none; 
   position: fixed; 
-  top: 70px; 
+  top: 75px; 
   left: 0; 
   right: 0;
   background: var(--navy); 
@@ -533,36 +535,44 @@ section {
   border-collapse: collapse;
   text-align: left;
   font-size: 13.5px;
+  table-layout: fixed;
+}
+
+.disclosure-table th, 
+.disclosure-table td {
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  color: var(--text);
+  vertical-align: middle;
+  word-wrap: break-word;
 }
 
 .disclosure-table th {
   background: #0073e6;
   color: var(--white);
-  padding: 12px 14px;
   font-weight: 700;
   border: 1px solid #005bb5;
-}
-
-.disclosure-table td {
-  padding: 12px 14px;
-  border: 1px solid #e2e8f0;
-  color: var(--text);
-  vertical-align: middle;
 }
 
 .disclosure-table tr:nth-child(even) {
   background-color: #f8fafc;
 }
 
+/* Fixed column allocations for absolute uniform layout */
 .disclosure-table th:nth-child(1),
 .disclosure-table td:nth-child(1) {
-  width: 70px;
+  width: 80px;
   text-align: center;
+}
+
+.disclosure-table th:nth-child(2),
+.disclosure-table td:nth-child(2) {
+  width: 520px;
 }
 
 .disclosure-table th:nth-child(3),
 .disclosure-table td:nth-child(3) {
-  width: 280px;
+  width: 440px;
 }
 
 .pdf-link {

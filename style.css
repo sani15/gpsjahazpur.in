@@ -557,12 +557,10 @@ section {
   background-color: #f8fafc;
 }
 
-/* Force affiliation number or text to stay on a single line */
 .nowrap-text {
   white-space: nowrap;
 }
 
-/* Explicit column widths for precise layout */
 .disclosure-table th:nth-child(1),
 .disclosure-table td:nth-child(1) {
   width: 80px;
